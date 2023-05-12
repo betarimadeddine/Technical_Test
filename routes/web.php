@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('categories.index');;
 })->name('home');
 
 Route::resource('categories', CategoryController::class);
